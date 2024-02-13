@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		D7C7F4702B6B91FC002834E9 /* CoffeePracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C7F46F2B6B91FC002834E9 /* CoffeePracticeApp.swift */; };
-		D7C7F4722B6B91FC002834E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C7F4712B6B91FC002834E9 /* ContentView.swift */; };
+		D7C7F4722B6B91FC002834E9 /* CoffeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C7F4712B6B91FC002834E9 /* CoffeesView.swift */; };
 		D7C7F4742B6B91FF002834E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7C7F4732B6B91FF002834E9 /* Assets.xcassets */; };
 		D7C7F4772B6B91FF002834E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7C7F4762B6B91FF002834E9 /* Preview Assets.xcassets */; };
+		D7C7F4822B6BA6CF002834E9 /* CoffeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C7F4812B6BA6CF002834E9 /* CoffeeDetailView.swift */; };
+		D7C7F4842B6BA6F6002834E9 /* CoffeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C7F4832B6BA6F6002834E9 /* CoffeesViewModel.swift */; };
+		D7C7F4862B6BA70C002834E9 /* CoffeeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C7F4852B6BA70C002834E9 /* CoffeeDetailViewModel.swift */; };
+		D7C7F4882B6BCA5C002834E9 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C7F4872B6BCA5C002834E9 /* Coffee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D7C7F46C2B6B91FC002834E9 /* CoffeePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C7F46F2B6B91FC002834E9 /* CoffeePracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeePracticeApp.swift; sourceTree = "<group>"; };
-		D7C7F4712B6B91FC002834E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D7C7F4712B6B91FC002834E9 /* CoffeesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeesView.swift; sourceTree = "<group>"; };
 		D7C7F4732B6B91FF002834E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7C7F4762B6B91FF002834E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7C7F4812B6BA6CF002834E9 /* CoffeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailView.swift; sourceTree = "<group>"; };
+		D7C7F4832B6BA6F6002834E9 /* CoffeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeesViewModel.swift; sourceTree = "<group>"; };
+		D7C7F4852B6BA70C002834E9 /* CoffeeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailViewModel.swift; sourceTree = "<group>"; };
+		D7C7F4872B6BCA5C002834E9 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				D7C7F46F2B6B91FC002834E9 /* CoffeePracticeApp.swift */,
-				D7C7F4712B6B91FC002834E9 /* ContentView.swift */,
+				D7C7F47D2B6BA5B7002834E9 /* Model */,
+				D7C7F47E2B6BA5C8002834E9 /* View */,
 				D7C7F4732B6B91FF002834E9 /* Assets.xcassets */,
 				D7C7F4752B6B91FF002834E9 /* Preview Content */,
 			);
@@ -65,6 +74,41 @@
 				D7C7F4762B6B91FF002834E9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D7C7F47D2B6BA5B7002834E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7C7F4872B6BCA5C002834E9 /* Coffee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7C7F47E2B6BA5C8002834E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7C7F47F2B6BA5D1002834E9 /* Coffees */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7C7F47F2B6BA5D1002834E9 /* Coffees */ = {
+			isa = PBXGroup;
+			children = (
+				D7C7F4802B6BA65E002834E9 /* Detail */,
+				D7C7F4712B6B91FC002834E9 /* CoffeesView.swift */,
+				D7C7F4832B6BA6F6002834E9 /* CoffeesViewModel.swift */,
+			);
+			path = Coffees;
+			sourceTree = "<group>";
+		};
+		D7C7F4802B6BA65E002834E9 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D7C7F4812B6BA6CF002834E9 /* CoffeeDetailView.swift */,
+				D7C7F4852B6BA70C002834E9 /* CoffeeDetailViewModel.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7C7F4722B6B91FC002834E9 /* ContentView.swift in Sources */,
+				D7C7F4842B6BA6F6002834E9 /* CoffeesViewModel.swift in Sources */,
+				D7C7F4822B6BA6CF002834E9 /* CoffeeDetailView.swift in Sources */,
+				D7C7F4722B6B91FC002834E9 /* CoffeesView.swift in Sources */,
 				D7C7F4702B6B91FC002834E9 /* CoffeePracticeApp.swift in Sources */,
+				D7C7F4862B6BA70C002834E9 /* CoffeeDetailViewModel.swift in Sources */,
+				D7C7F4882B6BCA5C002834E9 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
